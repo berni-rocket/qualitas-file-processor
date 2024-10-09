@@ -24,4 +24,4 @@ class EmisionesParser:
       table.append(record)
       
     df = pd.DataFrame.from_dict(table)
-    return Layout(df)
+    return df
