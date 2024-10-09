@@ -1,0 +1,76 @@
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 1
+
+Archivo: DI
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+|  0 | SECCION                                 | 2N                 |                    |                                         |
+|  0 | POLIZA                                  | 9N                 |                    |                                         |
+|  0 | ENDOSO                                  | 6N                 |                    |                                         |
+|  0 | ANEXO:INCISO                            | 4N                 |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+|  1 | RAMO                                    | 2N                 |                    |                                         |
+|  2 | SUBRAMO                                 | 2N                 |                    |                                         |
+|  3 | CATEGORIA PARA TASAS POR CATEG.         | 1N                 |                    |                                         |
+|  4 | CODIGO COAS PACTADO                     | 2N                 |                    |                                         |
+|  5 | CODIGO DE RIESGO                        | 9N                 |                    |                                         |
+|  6 | CODIGO DE INCISO                        | 5N                 |                    |                                         |
+|  7 | ACUMULA EN SUMA TOTAL                   | 1X                 | S/N                |                                         |
+|  8 | ACUMULA EN PRIMA TOTAL                  | 1X                 | S/N                |                                         |
+|  9 | TASA BASICA                             | 14N                |                    |                                         |
+| 10 | TASA NETA                               | 5N                 |                    |                                         |
+| 11 | VALOR DECLARADO                         | 14N                |                    |                                         |
+| 12 | SUMA ASEGURADA                          | 5N                 |                    |                                         |
+| 13 | PRIMA MOVIMIENTO                        | 5N                 |                    |                                         |
+| 14 | PRIMA TOTAL                             | 2N                 |                    |                                         |
+| 15 | Libre                                   |                    |                    |                                         |
+| 16 | VALOR DECLARADO      M.E.               | 14N                |                    |                                         |
+| 17 | SUMA ASEGURADA       M.E.               |                    |                    |                                         |
+| 18 | PRIMA DEL MOVIMIENTO M.E.               | 14N                |                    |                                         |
+| 19 | PRIMA TOTAL          M.E.               | 1X                 |                    |                                         |
+| 20 | PERDIDA MAXIMA PROBABLE                 | 2N                 |                    |                                         |
+| 21 | ZONA SISMICA                            | 1A                 |                    |                                         |
+| 22 | CLAUSULAS                               | 55X                |                    |                                         |
+| 23 | CODIGO PARA ENDOSOS                     | 1X                 |                    | E/I/N/M                                 |
+| 24 | RECARGOS/REBAJAS                        | 3N                 | MV                 |                                         |
+| 25 | DESCRIPICION                            | 30X                | MV                 |                                         |
+| 26 | TASA                                    | 5N                 | MV                 |                                         |
+| 27 | CODIGO DE CALCULO                       | 1N                 |                    |                                         |
+| 28 | CODIGO COBETURAS ADICIONALES            | 3N                 | MV                 |                                         |
+| 29 | DESCRIPCION                             | 30X                |                    |                                         |
+| 30 | CODIGO DE CALCULO                       |                    |                    |                                         |
+| 31 | TASA                                    |                    |                    |                                         |
+| 32 | SUMA ASEGURADA                          |                    |                    |                                         |
+| 33 | PRIMA                                   | 5N                 | MV                 |                                         |
+| 34 | SUMA ASEGURADA M.E.                     | 1N                 | MV                 |                                         |
+| 35 | PRIMA          M.E.                     |                    |                    |                                         |
+| 36 | (%) DESCUENTO ESPECIAL                  | 5N,2D              |                    |                                         |
+| 37 | PRORRATA O CORTO PLAZO                  | 1A                 |                    | P=Prorata  C=Corto plazo                |
+| 38 | CALIFICACION DEL RIESGO                 | 2N                 |                    |                                         |
+| 39 | (%) RECARGO X COAS. PACTADO             | 5N,2D              |                    |                                         |
+| 40 | (%) DESCUENTO X COAS. PACTADO           | 5N,2D              |                    |                                         |
+| 41 | (%) INFLACION                           |                    |                    |                                         |
+| 42 | (%) RECARGO X INFLACION                 |                    |                    |                                         |
+| 43 | CALLE                                   | 14N                |                    |                                         |
+| 44 | NUMERO                                  | 14N                |                    |                                         |
+| 45 | COLONIA                                 | 14N                |                    |                                         |
+| 46 | ESTADO                                  | 14N                |                    |                                         |
+| 47 | POBLACION                               |                    |                    |                                         |
+| 48 | COD.POSTAL                              |                    |                    |                                         |
+| 49 | UBICACION                               |                    |                    |                                         |
+| 50 | CODIGOS ESTADISTICOS                    |                    |                    |                                         |
+| 51 | NUMEROS DE REASEGURO                    | 3N                 |                    | MV                                      |
+| 52 | ESTADO DEL REASEGURO 'A' O COD. DE ERROR| 1X                 |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 2
+
+Archivo: DI
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+| 53 | VALOR DE LA RETENCION (EXCEDENTES)      |                    |                    |                                         |
+| 54 | UBICADO ENTRE CALLES                    | 20X                |                    |                                         |
+| 55 | NRO.INTERIOR                            | 5X                 |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------

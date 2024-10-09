@@ -1,0 +1,551 @@
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 1
+
+Archivo: PV
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+*|  0 | RAMO (2) 04                                    |                    |                    |                                         |
+*|  0 | POLIZA (10)                                  |                    |                    |                                         |
+*|  0 | ENDOSO (6)                                 |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+*|  1 | ASEGURADO (10)                               |                    |                    |                                         |
+|  2 | CALIDAD DEL ASEGURADO                   |                    |                    |                                         |
+*c|  3 | FECHA EMISION                           |                    |                    |                                         |
+*c|  4 | VIGENCIA DESDE                          |                    |                    |                                         |
+*c|  5 | VIGENCIA HASTA                          |                    |                    |                                         |
+*|  6 | RENOVADA POR                            |                    |                    |                                         |
+*|  7 | RENUEVA A                               |                    |                    |                                         |
+*|  8 | CODIGO DE MONEDA                        |                    |                    |                                         |
+|  9 | CODIGO DE FACTURACION                   |                    |                    |                                         |
+| 10 | CODIGO DE EMISION (MONEDA)              |                    |                    |                                         |
+*| 11 | %  RECARGO FINANCIERO                   |                    |                    |                                         |
+*| 12 | %  I.V.A.                               |                    |                    |                                         |
+*| 13 | %  BONIFICACION                         | N,FI,2D,MV         |                    | mv por att 19                           |
+*| 14 | %  BONIFICACION REC.FIN.                | N,FI,2D,MV         |                    | mv por att 19                           |
+*| 15 | %  BONIFICACION TECNICA                 |                    |                    |                                         |
+| 16 | COD.CAMBIO REC.FIN./I.V.A.              |                    |                    |                                         |
+| 17 | COD.CAMBIO BONIF.(NORMAL/REC.FIN/TEC)   |                    |                    |                                         |
+| 18 | COD.CAMBIO DERECHO DE POLIZA            |                    |                    |                                         |
+**| 19 | CODIGO DE RAMO/SUBRAMOS                 |                    |                    |                                         |
+| 20 |                                         |                    |                    |                                         |
+*| 21 | ANO Y MES: TARIFA,VALORES Y DER.POL     | 4N,MV              |                    | Tarifa y valores solo para autos        |
+*| 22 | SUMA ASEGURADA                          |                    |                    |                                         |
+*| 23 | PRIMA NETA                              | N,FI,2D,MV         |                    | (mv por att 19)                         |
+*| 24 | DERECHO DE POLIZA/ENDOSO                |                    |                    |                                         |
+*| 25 | RECARGO FINANCIERO                      |                    |                    |                                         |
+*| 26 | I.V.A.                                  |                    |                    |                                         |
+*| 27 | BONIFICACION                            | N,FI,2D,MV         |                    | (mv por att 19)                         |
+*| 28 | BONIFICACION REC.FIN.                   | N,FI,2D,MV         |                    | (mv por att 19)                         |
+*| 29 | BONIFICACION TECNICA                    |                    |                    |                                         |
+*| 30 | PRIMA (SOLO P/ENDOSO DE REC.FIN)        | N,FI,2D,MV         |                    | (MV por att 19) (No suma en PREMIO)     |
+*| 31 | PRIMA TOTAL                             |                    |                    |                                         |
+*| 32 | CODIGO DE PLAN DE PAGO                  |                    |                    |                                         |
+- ya existe en cada recibo| 33 | FECHA DE VTO. CUOTAS                    | FI,MV              |                    |                                         |
+- ya existe en cada recibo| 34 | IMPORTE CUOTAS                          | N,FI,2D,MV         |                    | (mv por att 33)                         |
+*| 35 | RECIBOS DE PAGO POR CUOTA               | 7N,MV              | TREC.PAGO          |                                         |
+| 36 | CODIGO DE PRODUCTO                      |                    |                    |                                         |
+*| 37 | AGENTES Y PROMOTORES                    | 5N,MV              |                    |                                         |
+| 38 | COD.ACRED.COMISION NORMAL               | MV                 |                    |                                         |
+| 39 | COD.ACRED.COMISION REC.FIN              | MV                 |                    |                                         |
+| 40 | COD.ACRED.COMISION TECNICA              | MV                 |                    |                                         |
+| 41 | COD.CAMBIO COMISION NORMAL              | MV                 |                    |                                         |
+| 42 | COD.CAMBIO COMISION REC.FIN             | MV                 |                    |                                         |
+| 43 | COD.CAMBIO COMISION TECNICA             | MV                 |                    |                                         |
+*| 44 | COMISION NORMAL                         | N,FI,2D,MV,SV      |                    | (mv por att 37 y sv por att 19)         |
+*| 45 | COMISION REC.FIN.                       | N,FI,2D,MV,SV      |                    | (mv por att 37 y sv por att 19)         |
+*| 46 | COMISION TECNICA                        | N,FI,2D,MV         |                    | (mv por att 37)                         |
+| 47 | ZONA ASIGNADA AL AGENTE                 | 2N                 | MPROD              |                                         |
+| 48 | CONT. DI                                |                    |                    |                                         |
+| 49 | NUMERO DE SOLICITUD                     |                    |                    |                                         |
+| 50 | NRO.DE COTIZACION                       |                    |                    |                                         |
+| 51 | NRO.DE EXPEDIENTE                       |                    |                    |                                         |
+*| 52 | ENDOSO QUE MODIFICA                     |                    |                    |                                         |
+| 53 | VIGENCIA HASTA ORIGINAL                 |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 2
+
+Archivo: PV
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+| 54 | COD.CONDUCTO DE PAGO                    |                    |                    |                                         |
+| 55 | CONDUCTO DE PAGO                        |                    |                    |                                         |
+*| 56 | ACREEDOR PRENDARIO                      |                    |                    |                                         |
+*| 57 | MARCA DE ANULACION AUTOMATICA           |                    |                    |                                         |
+| 58 | RECIBOS CONSOLIDADOS (S/N)              | 1X                 |                    | (S/N)                                   |
+| 59 | CANTIDAD EJEMPLARES FRENTE POLIZA       | 1N                 |                    |                                         |
+| 60 | EMITE RECIBO EN LA PRIMER CTA (S/N)     | 1X                 |                    |                                         |
+*KEY| 61 | NRO DE ITEMS ASOCIADOS (complemento de llave para el archivo DI)                  | MV                 |                    |                                         |
+*| 62 | TIPO DE ENDOSOS ASOCIADOS               | MV                 |                    |                                         |
+*| 63 | ENDOSOS ASOCIADOS                       | MV                 |                    |                                         |
+| 64 | CODI. COBRANZA COAS.                    | MV                 |                    |                                         |
+*| 65 | PAGOS NRO.                              | MV                 |                    |                                         |
+| 66 | FECHA DE AMORTIZACION                   |                    |                    |                                         |
+*| 67 | FECHA DE REHABILITACION                 |                    |                    |                                         |
+*| 68 | NUMERO DE SINIESTRO                     |                    |                    |                                         |
+*| 69 | CODIGO DE SUCURSAL                      |                    |                    |                                         |
+| 70 | FECHA DE DESPACHO                       |                    |                    |                                         |
+| 71 | FECHA DE PROCESO                        |                    |                    |                                         |
+| 72 | LINEA                                   |                    |                    |                                         |
+| 73 | HORA DE INICIO DE CARGA                 |                    |                    |                                         |
+| 74 | HORA DE FIN DE CARGA                    |                    |                    |                                         |
+| 75 | PERSONALIZACION DE TRANZACCIONES        |                    |                    |                                         |
+| 76 | MARCA DE IMPRESION FRENTE               |                    |                    |                                         |
+| 77 | MARCA DE IMPRESION CHEQUERA             |                    |                    |                                         |
+*| 78 | CODIGO DE OPERACION (COASeguro)              |                    |                    |                                         |
+*| 79 | POL/END EN COAS RECIBIDO U OTORGADO     |                    |                    |                                         |
+*| 80 | COMPANIA PILOTO                         |                    |                    |                                         |
+*| 81 | COMPANIAS PARTICIPANTES                 | 3N,MV              |                    |                                         |
+*| 82 | % PARTICIPACION CIAS. S/PRIMA           | N,FI,2D,MV         |                    | (mv por att 81)                         |
+| 83 | % PARTICIPACION CIAS. S/PREMIO          | N,FI,2D,MV         |                    | (mv por att 81)                         |
+| 84 | COD.GASTOS DE PILOTAJE                  |                    |                    |                                         |
+| 85 | GASTOS DE PILOTAJE EN COAS.CED.         |                    |                    |                                         |
+| 86 | GASTOS DE PILOTAJE EN COAS.REC.         |                    |                    |                                         |
+| 87 | GASTOS PROD. COAS.REC. VIDA             |                    |                    |                                         |
+| 88 | COD.LIQ. COMIS. NORMAL                  |                    |                    |                                         |
+| 89 | COD.LIQ. COMIS. REC.FIN                 |                    |                    |                                         |
+| 90 | COD.LIQ. COMIS. TECNICA                 |                    |                    |                                         |
+| 91 | CODIGO DE CANCELACION                   | 2N                 |                    |                                         |
+| 92 | REASEGURO AUTOMATICO (S/N)              |                    |                    |                                         |
+| 93 | COD.REASEGURO                           |                    |                    |                                         |
+| 94 | NRO. DE REASEGURO                       |                    |                    |                                         |
+*| 95 | TURISTAS                                |                    |                    | 1.- TURISTAS MULTIENTRADA               |
+|    |                                         |                    |                    | 2.- TERRITORIALIDAD                     |
+|    |                                         |                    |                    | 3.- CVE. TARIFA/RANGO FECHA             |
+|    |                                         |                    |                    | 4.- REFERENCIA POL EXT.                 |
+| 96 | COD.CAMBIO CAMBIO                       |                    |                    |                                         |
+*| 97 | CAMBIO DE MONEDA                        |                    |                    |                                         |
+*| 98 | SUMA ASEGURADA         M.E.             |                    |                    |                                         |
+*| 99 | PRIMA TOTAL            M.E.             | N,FI,2D,MV         |                    | (mv por att 19)                         |
+*|100 | DERECHO DE POLIZA/END  M.E.             |                    |                    |                                         |
+*|101 | RECARGO FINANCIERO     M.E.             |                    |                    |                                         |
+*|102 | I.V.A. M.E.                             |                    |                    |                                         |
+*|103 | BONIFICACION           M.E.             | N,FI,2D,MV         |                    | (mv por att 19)                         |
+*|104 | BONIFICACION REC.FIN.  M.E.             |                    |                    |                                         |
+*|105 | BONIFICACION TECNICA   M.E.             |                    |                    |                                         |
+*|106 | PRIMA (SOLO P/ENDOSO REC.FIN) M.E.      | N,FI,2D,MV         |                    | (MV por att 19) (No suma en PREMIO)     |
+*|107 | PRIMA TOTAL            M.E.             |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 3
+
+Archivo: PV
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+*|108 | IMPORTE CUOTAS         M.E.             | N,FI,2D,MV         |                    | (mv por att 33)                         |
+|109 | TERMINAL                                | N,3D               |                    |                                         |
+|110 |                                         |                    |                    |                                         |
+|111 |                                         |                    |                    |                                         |
+|112 |                                         |                    |                    |                                         |
+|113 |                                         |                    |                    |                                         |
+|114 |                                         |                    |                    |                                         |
+|115 |                                         |                    |                    |                                         |
+|116 |                                         |                    |                    |                                         |
+|117 |                                         |                    |                    |                                         |
+|118 |                                         |                    |                    |                                         |
+|119 |                                         |                    |                    |                                         |
+|120 | POLITICA DE CANCELACION                 |                    |                    |                                         |
+|121 | GASLOCK                                 |                    |                    |                                         |
+*|122 | USUARIO QUE EMITE                       |                    |                    |                                         |
+|123 | POLIZAS BLANKET (TURISTA)               |                    |                    |                                         |
+|124 | IVA RCP                                 |                    |                    |                                         |
+|125 | BONIFICACION NORMAL RCP                 |                    |                    |                                         |
+|126 | REMESA DEL DERECHO                      |                    |                    |                                         |
+|127 |                                         |                    |                    |                                         |
+|128 |                                         |                    |                    |                                         |
+|129 | CODIGO DE ADICIONAL                     |                    |                    |                                         |
+|130 | NUMERO DE AUT. BONIFICACION             |                    |                    |                                         |
+|131 | AUT. PARA TARIFICACION MANUAL           |                    |                    |                                         |
+|132 |                                         |                    |                    |                                         |
+|133 | DESCTO. POR ZONA PARA AUTOS             |                    |                    |                                         |
+|134 | DESCTO. POR ZONA PARA CAMIONES          |                    |                    |                                         |
+|135 | PRIMA SUVA                              |                    |                    |                                         |
+|136 | AUT.BONIFICACION                        | 9N                 | PBONIF             |                                         |
+|137 |                                         |                    |                    |                                         |
+|138 | Libre                                   |                    |                    |                                         |
+|139 | BANCO DE LA TARJETA                     |                    |                    |                                         |
+|140 | PRORRATEO DE DERECHO                    |                    |                    |                                         |
+|141 | AUT. P/PRORRATEO DE DCHO.               |                    |                    |                                         |
+|142 |                                         |                    |                    |                                         |
+|143 | AUT. P/EQ. ESP. Y ADAP.                 |                    |                    |                                         |
+|144 | AUT. P.TARIFA DE EQ. PESADO             |                    |                    |                                         |
+|145 | FECHA DE VENCIMIENTO DE LA TARJETA      |                    |                    |                                         |
+|146 | CODIGO DE SEGURIDAD (American Express)  |                    |                    |                                         |
+*|147 | RENOVACION AUTOMATICA                   |                    |                    |                                         |
+|148 | No. DE FLOTILLA P/POLIZA IND.           |                    |                    |                                         |
+|149 | AUT. PARA %BONIF>20 REN.AUT             |                    |                    |                                         |
+|150 | No. DE ORDEN DE TRABAJO (O.T.)          |                    |                    |                                         |
+|151 | CONDICIONES VIGENTES                    |                    |                    |                                         |
+|152 | FORMATO DE IMPRESION                    | 1N                 |                    |                                         |
+|153 | AUT. DE % DE RECARGO                    |                    |                    |                                         |
+|154 | AUT. PARA REHABILITAR CON + 60 DIAS     |                    |                    |                                         |
+|155 | AUT. PARA ONC. DE S.A. EN AUTOBUSES     |                    |                    |                                         |
+|156 | AUT. PARA ENDOSOS EN POL.VENCIDAS       |                    |                    |                                         |
+|157 | AUT. PARA COBERTURAS EN AUTOBUSES       |                    |                    |                                         |
+|158 | FECHA DE EMISION EN PC-EMISION          |                    |                    |                                         |
+|159 | FORMATO DE RECIBOS (N=NORMAL I=INVER)   |                    |                    |                                         |
+|160 | CODIGOS DE SUAUTO                       |                    |                    |                                         |
+|161 | AUT. PARA TARIFAS ESPECIALES            |                    |                    |                                         |
+|162 | NUMERO DE RECIBOS (POL SUAUTO)          |                    |                    |                                         |
+*|163 | DIAS DE PERIODO DE GRACIA DEL AGENTE    |                    |                    |                                         |
+*|164 | AUT. EN DIAS DE PERIODO DE GRACIA       |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 4
+
+Archivo: PV
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+*|165 | % DESC X PERIODO DE GRACIA              |                    |                    |                                         |
+*|166 | DESCTO. PERIODO DE GRACIA               |                    |                    |                                         |
+|167 | % DEPARTICIPACION DE LA PMA P/OFNAS.    |                    |                    |                                         |
+|168 | AUT. PARA POLIZAS TURISTAS              |                    |                    |                                         |
+|169 | REG. IVA                                |                    |                    |                                         |
+|170 |                                         |                    |                    |                                         |
+|171 |                                         |                    |                    |                                         |
+|172 | COD.IVA                                 |                    |                    |                                         |
+|173 |                                         |                    |                    |                                         |
+|174 | TIPO DE IVA                             |                    |                    |                                         |
+|175 | MARCA SCJ                               |                    |                    |                                         |
+|176 | UNIDADES CUBIERTAS POL.TURISTAS         |                    |                    |                                         |
+|177 | PRIMA ASISTENCIA TURISTICA              |                    |                    |                                         |
+*|178 | POLITICAS DE BONO A AGENTE              |                    |                    |                                         |
+*|179 | POLITICAS DE BONO A PROMOTOR            |                    |                    |                                         |
+|180 | AUT. P/MODIFICAR BONOS                  |                    |                    |                                         |
+|181 | AUT. P/REUTILIZAR COTIZACIONES          |                    |                    |                                         |
+|182 | AUT. P/CAMBIAR ASEGURADO EN ENDOSO      |                    |                    |                                         |
+|183 | MARCA P/RC EN E EXTRANJERO              |                    |                    |                                         |
+|184 | CODIGO AGENCIA                          |                    |                    |                                         |
+|185 | CONSECUTIVO AGENTE                      |                    |                    |                                         |
+|186 | CAMPOS POR AGENTE                       |                    |                    |                                         |
+|187 | USUARIO CON POL. DE BELANCEO DE RECIBOS |                    |                    |                                         |
+|188 | POL. CON S.A. MODIF. CLUB PILOT.        |                    |                    |                                         |
+|189 | REF. POL. INICIAL MODIF. CLUB PILOTOS   |                    |                    |                                         |
+*|190 | MARCA DE DEDUCIBLE ADMINISTRATIVO       |                    |                    |                                         |
+|191 | AUT. P/APLICAR PT CON RECIBOS           |                    |                    |                                         |
+|    | PENDIENTES DE PAGO                      |                    |                    |                                         |
+|192 | AUT. DE POL. CON DEDUC. ADMVO.          |                    |                    |                                         |
+|193 | AUT. PARA PAGO MENS. O TRIM. EN AUTOBUSE|                    |                    |                                         |
+|    | MICROS  Y TAXIS                         |                    |                    |                                         |
+|194 | NUM. DE REMESA DE ENVMO RCEXT           |                    |                    |                                         |
+|195 | SUBCLAVE                                |                    |                    |                                         |
+|196 | AUT. PARA QUITAR LA COB DE ASIS. ST.    |                    |                    |                                         |
+*|197 | PLAN PISO                               |                    |                    |                                         |
+|198 | PAQUETE DE COASEGURO                    |                    |                    |                                         |
+|199 | COD. DE TARIFA PAQ. FAMILIAR            |                    |                    |                                         |
+|200 | NUM PRODUC. PAUETE FAMILIAR             |                    |                    |                                         |
+|201 | AUT PARA TARIFA MANUAL                  |                    |                    |                                         |
+|202 | DESC. DE CODB. INGRESADAS POR ENDOSO    |                    |                    |                                         |
+|203 | ACT. DE LAS SECC. CUBIERTAS X LA POL.   |                    |                    |                                         |
+|204 |                                         |                    |                    |                                         |
+|205 |                                         |                    |                    |                                         |
+|206 |                                         |                    |                    |                                         |
+|207 | COD. DE AGENCIA                         |                    |                    |                                         |
+|208 | % DE UDI                                |                    |                    |                                         |
+|209 | AUT. PARA TAR. DIF. EN COTIZACION       |                    |                    |                                         |
+|210 | DER. POL. 1ER RECIBO                    |                    |                    |                                         |
+|211 | % S/COMISION RC EXT.                    |                    |                    |                                         |
+|212 | % DER. POL RC EXT.                      |                    |                    |                                         |
+|213 | COD. DESCRIPTIVO P/DERIVACION           |                    |                    |                                         |
+|214 | USUARIO QUE MARCA REC. P/CANCELACION    |                    |                    |                                         |
+|215 | AUT. P/MODIFICAR COB. EQ. ELECTRONICO   |                    |                    |                                         |
+|216 | AUT. P/CAMBIO DER. POLIZA               |                    |                    |                                         |
+|217 | CVE. DE USUARIO QUE MODIFICA SUAUTO     |                    |                    |                                         |
+|218 | AUT. RENOVACION                         |                    |                    |                                         |
+|219 | REC. EN CAMBIO DE FECHAS                |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 5
+
+Archivo: PV
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+|220 | AUT. P/AJUSTE AUTOMAICO                 |                    |                    |                                         |
+|221 | POL COMP. PEUGEOT                       |                    |                    |                                         |
+|222 | AUT P/EMITIR SERV PUB. SEMESTRAL        |                    |                    |                                         |
+|223 | POL. DE COMPENSACION DE AGENCIAS        |                    |                    |                                         |
+|224 | AUT. P/MODIFICAR LA COMISION NORMAL     |                    |                    |                                         |
+|225 | AUT P/MODIFICAR LA COMISION X RECARGO   |                    |                    |                                         |
+|226 | AUT. P/CAMBIO DE COD. DE ASEGURADO      |                    |                    |                                         |
+|227 |                                         |                    |                    |                                         |
+|228 | AUT. P/EMITIR PAQ. FAMILIAR             |                    |                    |                                         |
+|229 | COND. DE BONO ERRONEAS                  |                    |                    |                                         |
+|230 | AUT. P/AMPARAR SERIES DUP. C/AGTES #    |                    |                    |                                         |
+|231 | AUT. P/EMITIR VEH. FRONTERIZOS < 5 ANIOS|                    |                    |                                         |
+|232 |                                         |                    |                    |                                         |
+|233 |                                         |                    |                    |                                         |
+|234 | NUM. NEGOCIO OPL                        |                    |                    |                                         |
+|235 | LEYENDA DE DEDUCIBLE ADMVO.             |                    |                    |                                         |
+|236 | PROV. ANTERIORES DE AV                  |                    |                    |                                         |
+|237 | USUARIO QUE MODIFICA EL PROV. AV        |                    |                    |                                         |
+|238 | FECHA DE MODIF. DEL PROV. DE AV         |                    |                    |                                         |
+|239 | MARCA DE REPORTE ASIGNADO               |                    |                    |                                         |
+|240 | AUT. P/EMITIR COB. ESP. EN MOD.ANT.     |                    |                    |                                         |
+|241 | MARCA DE POL SPLIT DE RC EXT.           |                    |                    |                                         |
+*|242 | USUARIO DE QBC                          |                    |                    |                                         |
+|243 | NOMBRE DEL NEGOCIO (CONAUTO)            |                    |                    |                                         |
+|244 | ZONA PARA RCEUA                         |                    |                    |                                         |
+|245 | AUT. P/EMITIR MOD.ANT CON TAR NO PERM.  |                    |                    |                                         |
+|246 |                                         |                    |                    |                                         |
+|247 | MARCA DE POL. QUE PASAN POR BALANCEO DE |                    |                    |                                         |
+|248 | POL. LIGADA MODIF. S.A. Y PRODUCTO      |                    |                    |                                         |
+|249 | REF. POL. INI A LA Q SE HICERON MODIF.  |                    |                    |                                         |
+|250 | FECHA DE CANCELACION AUTOMATICA         |                    |                    |                                         |
+|251 |  SIN DESCRIPCION                        |                    |                    |                                         |
+|252 | SIN DESCRIPCION                         |                    |                    |                                         |
+|253 | % DE UDI CEDIDO POR LA AGENCIA          |                    |                    |                                         |
+|254 | AUT. PARA EMITIR CON TARIFAS NO VIGENTES|                    |                    |                                         |
+|255 | EXCLUSION DEL DIA BISIESTO              |                    | S o N              |                                         |
+|256 | TEXTOS ASOCIADOS AL DI                  |                    |                    |                                         |
+|257 | ATENCION VIAL M.N. (EL SALVADOR)        |                    |                    |                                         |
+|258 | ATENCION VIAL USD (EL SALVADOR)         |                    |                    |                                         |
+|259 | MARCA SI ESTA EN APLICACION DE PAGO     |                    |                    |                                         |
+|260 | VALIDACION DE QUE EL AUTO NO ESTE ROBADO|                    |                    |                                         |
+|261 | AUT. PARA EMITIR SER. PUB. VIG -183 DIAS|                    |                    |                                         |
+|262 | MARCA DE CONTABILIDAD DIARIA            |                    |                    |                                         |
+|263 | AUT. P/AMP VEH <25 ANOS RC PAS          |                    |                    |                                         |
+|264 | VIGENCIA DE GARANTIA DEL FABRICANTE     |                    |                    |                                         |
+|265 | AUT. P/IMPRIMIR ASEG. MARCADO ART 140   |                    |                    |                                         |
+|266 | CVE DE AGENCIA                          |                    |                    |                                         |
+|267 | % DE DISTRIBUCION UDI                   |                    |                    |                                         |
+|268 |  SUBRAMO DEL DESCUENTO                  |                    |                    |                                         |
+|269 | POLIZA A MESES SIN INTERESE             |                    |                    |                                         |
+|270 | SELLADO EN EMISION                      |                    |                    |                                         |
+|271 | CAMBIOS FISCALES DEL ASEGURADO          |                    |                    |                                         |
+|272 | AUT. PARA NO SELLAR                     |                    |                    |                                         |
+|273 | FECHA DE CREACION(END. AFECTADO X CFP)  |                    |                    |                                         |
+|274 | MARCA POL. AUTOEXPEDIBLES               |                    |                    |                                         |
+|275 | MARCA P/END.B CUANDO SELLA REC. PAGADOS |                    |                    |                                         |
+|276 | AUT. P/EMITIR SERIES CON PT'S           |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 6
+
+Archivo: PV
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+|277 | VIG. DEL REGISTRO EN CASO DE SINIESTRO  |                    |                    |                                         |
+|278 | AGENCIAS AUTOMOTRICES CVE.CORTA:NO.AGENC|                    |                    |                                         |
+|279 | ---                                     |                    |                  |                                         |
+|280 | ---                                     |                    |                    |                                         |
+|281 | ---                                     |                    |                    |                                         |
+|282 | MARCA DE CAMBIO DE IVA                  |                    |                    |                                         |
+|283 | MARCA DE SEMINUEVO AV. MEC.             |                    |                    |                                         |
+|284 | MARCA DE EMBARCACION                    |                    |                    |                                         |
+|285 | No. DE INCISOS EN LA POLIZA             |                    |                    |                                         |
+|286 | ENDOSO DE SISE S/N                      |                    |                    |                                         |
+|287 | SUMAS DE CAT. NO INCLUIDAS EN LA BONIFIC|                    |                    |                                         |
+|288 | AUT. DEDUCIBLE ENCONTRACK               |                    |                    |                                         |
+|289 | FECHA DE PROC DE DERIVACION             |                    |                    |                                         |
+*|290 | C.P. ASEGURADO                          |                    |                    |                                         |
+|291 | C.P. ALTERNO                            |                    |                    |                                         |
+|292 | USUARIO QUE MODIFICA C.P.               |                    |                    |                                         |
+*|293 | COD. EDO Y GRUPO C.P.                   |                    |                    |                                         |
+*|294 | TIPO POLIZA (Ind.Flot,Col)              |                    |                    |                                         |
+|295 | PAQ. PARA VALIDAR EMISION               |                    |                    |                                         |
+|    | CON PAQ. 45                             |                    |                    |                                         |
+|296 | CONTROL DIAS PER. GRACIA                |                    |                    |                                         |
+|297 | AUT DIAS DE PER.GRACIA                  |                    |                    |                                         |
+|298 | DER.POL. DIVIDIDO X REC.                |                    |                    |                                         |
+|299 | AUT. PARA MODIFICAR C.P.                |                    |                    |                                         |
+|300 | NCLUYE S/N ROBO VALOR TOTAL             |                    |                    |                                         |
+|    | (RBO. VY)                               |                    |                    |                                         |
+|301 | TIPO DE POLIZA (COSTA RICA)             |                    |                    |                                         |
+|302 | TIPO COLECTIVIDAD (COSTA RICA)          |                    |                    |                                         |
+|303 | NUMERO DE COLECTIVIDAD (CR)             |                    |                    |                                         |
+|304 | REC.FIN. DEVENGADO M.N.                 |                    |                    |                                         |
+|305 | COMIS. DEV. S/REC.FIN                   |                    |                    |                                         |
+|306 | REC.FIN DEVENGADO USD                   |                    |                    |                                         |
+|307 | CODIGO METODO DE PAGO                   |                    |                    |                                         |
+|308 | DESCRIPCION DEL METODO                  |                    |                    |                                         |
+|309 | DIGITOS DE LA CUENTA                    |                    |                    |                                         |
+|310 | MARCA DE EMISION EN SISE                |                    |                    |                                         |
+|311 | % REC/DESC. X EDAD                      |                    |                    |                                         |
+|312 | % REC/DESC. X OCUPACION                 |                    |                    |                                         |
+|313 | % REC/DESC. X GENERO                    |                    |                    |                                         |
+|314 | PMA. NETA DEVUELTA (EL SALV.)           |                    |                    |                                         |
+|315 | AUT. P/EMITIR CON PEPS                  |                    |                    |                                         |
+|316 | DIAS MAXIMOS EMISION                    |                    |                    |                                         |
+|317 | RmSr CIERRE EMISION (EL SALV.)          |                    |                    |                                         |
+|318 | AUT. SUMA R.P.                          |                    |                    |                                         |
+|319 | LIBRE                                   |                    |                    |                                         |
+|320 | AGRUPADOR S/N                           |                    |                    |                                         |
+|321 | NUMERO DE AGRUPADOR                     |                    |                    |                                         |
+|322 | CLAVE DE AGENCIA                        |                    |                    |                                         |
+|323 | % DE DISTRIBUCION DE UDI                |                    |                    |                                         |
+|324 | SUBRAMO DE DISTRIBUCION                 |                    |                    |                                         |
+|325 | LEYENDA DE DATOS MODIFICADOS (C.P.)     |                    |                    |                                         |
+|326 | RESPALDO DE DATOS DEL ASEGURADO (C.P.)  |                    |                    |                                         |
+|327 | POL. EMITIDAS X SANTANDER COAS.         |                    |                    |                                         |
+|328 | RAMO POLIZAS SANTANDER COAS.            |                    |                    |                                         |
+|329 | AUT. S.A. TURISTAS                      |                    |                    |                                         |
+|330 | HORA INICIO POL TURISTA                 |                    |                    |                                         |
+|331 | IMPRESION DEL CERT. RC OBL              |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 7
+
+Archivo: PV
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+|332 | COBERTURAS EMITIDAS EN LOS INCISOS      |                    |                    |                                         |
+|333 | AUT. PARA CANCELAR POL. DE RC OBL       |                    |                    |                                         |
+|334 | FACTOR DE CALCULO                       |                    |                    |                                         |
+|335 | AUT. P/CANCELACION SIN AVAL DE 2 DIAS   |                    |                    |                                         |
+|336 | AGTE EXCEPTUADO "S"                     |                    |                    |                                         |
+|337 | PRORRATEO POR AGENTE DE RC OBL          |                    |                    |                                         |
+|338 | AGENTE PARA PRORRATEO DE RC OBL         |                    |                    |                                         |
+|339 | CAMBIO DE FORMATO DE VIGENCIA DE LA POL.|                    |                    |                                         |
+|340 | SUBAGENTE (Q. COSTA RICA)               |                    |                    |                                         |
+|341 | COB. AFECTADAS POR DEDUCIBLE ADMINISTRAT|                    |                    |                                         |
+|    | IVO                                     |                    |                    |                                         |
+|342 | AUT. PARA REGULARIZADOS DEFERENTE PAQUET|                    |                    |                                         |
+|    | E                                       |                    |                    |                                         |
+|343 | MARCA DE INTEGRACION A PACOL            |                    |                    |                                         |
+|344 | FECHA DE INTEGRACION A PACOL            |                    |                    |                                         |
+|345 | MARCA POLIZA CARGA OPL                  |                    |                    |                                         |
+|346 | FECHA CARGA POLIZA OPL                  |                    |                    |                                         |
+|347 | NUM. DE COTIZACION QEMISION             |                    |                    |                                         |
+|348 | NUM. DE AREA DE TRABAJO QEMISION        |                    |                    |                                         |
+|349 | PMA. NETA X INCISO                      |                    |                    |                                         |
+|350 | ACUM. PRIMA SIN BT X INCISO             |                    |                    |                                         |
+|351 | PMA. SIN ACUMULADO X INCISO             |                    |                    |                                         |
+|352 | P.N-BT X INCISO                         |                    |                    |                                         |
+|353 | SUBRAMO X INCISO                        |                    |                    |                                         |
+|354 | COBRANZA OPL                            |                    |                    |                                         |
+|355 | DER POL X INCISO                        |                    |                    |                                         |
+|356 | BM                                      |                    |                    |                                         |
+|357 | RECURSOS FINANC. X INCISO               |                    |                    |                                         |
+|358 | IVA X INCISO                            |                    |                    |                                         |
+|359 | TOTAL X INCISO                          |                    |                    |                                         |
+|360 | POLIZA PROCESADA ART. 492               |                    |                    |                                         |
+|361 | USUARIO EMISION AUXILIAR                |                    |                    |                                         |
+|362 | FACTOR CALCULO HI                       |                    |                    |                                         |
+|363 | BANDERA PARA TCOBER.VEH                 |                    |                    |                                         |
+|364 | AUT. PARAISO FISCAL                     |                    |                    |                                         |
+|365 | MARCA POL GAP                           |                    |                    |                                         |
+|366 | % DE REASEGURO GAP                      |                    |                    |                                         |
+|367 | POLIZA GAP                              |                    |                    |                                         |
+|368 | POLIZA REF Q                            |                    |                    |                                         |
+|369 | CLAVE VIP 00                            |                    |                    |                                         |
+|370 | CLAVE VIP 01                            |                    |                    |                                         |
+|371 | CLAVE VIP 02                            |                    |                    |                                         |
+|372 | AUT. SAP-VIGENTE                        |                    |                    |                                         |
+|373 | AUT. SAP-CARRUCEL                       |                    |                    |                                         |
+|374 | BT X INC                                |                    |                    |                                         |
+|375 | BN X INC                                |                    |                    |                                         |
+|376 | BR X INC                                |                    |                    |                                         |
+|377 | MAREA PRECOSTO DESG                     |                    |                    |                                         |
+|378 | METODO DE PAGO OPL                      |                    |                    |                                         |
+|379 | EN WS SE VERIFICA QUE EL AGENTE AVALA LA|                    |                    |                                         |
+|    | OPERACION                               |                    |                    |                                         |
+|380 | MARCA AGENTE CUES. DIRECTA              |                    |                    |                                         |
+|381 | AUT. AGENTES CUES. DIRECTAS PANTALLA CAM|                    |                    |                                         |
+|    | BIO DE AGENTES                          |                    |                    |                                         |
+|382 | NRO. VEH. ASOCIADO POL                  |                    |                    |                                         |
+|383 | AUT. SERIE APP                          |                    |                    |                                         |
+|384 | MARCA DE POLIZA DEPURADA A HISTORICO    |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 8
+
+Archivo: PV
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+*|385 | TIPO DE NEGOCIO                         |                    |                    |                                         |
+|    | (I,FL,C,NE,NF>                          |                    |                    |                                         |
+|386 | MARCA CAMBIO AGT                        |                    |                    |                                         |
+|    | PANTALLA ABMT900                        |                    |                    |                                         |
+|387 | OP.WEB                                  |                    |                    |                                         |
+|388 | RECIBOS OP.WEB                          |                    |                    |                                         |
+|389 | AUTORIZACION OTRAS OP                   |                    |                    |                                         |
+|390 | PRORRATEO GENERAL DE LA RCOBL           |                    |                    |                                         |
+|391 | HISTORIAL DE ASEGURADO EN POLIZA        |                    |                    |                                         |
+|392 | PAGO DE COMISION COMPLETA PERU          |                    |                    |                                         |
+|393 | LIGA DE DOCUMENTO DE REFINANCIAMIENTO   |                    |                    |                                         |
+|394 | AUT. P/EMITIR PERSONA SUJETA A REVISION |                    |                    |                                         |
+|395 | AUT. P/EMITIR PERSONAS NO ASEGURABLES   |                    |                    | COSTA RICA                              |
+|396 | BLOQUEO DE POLIZAS                      |                    |                    |                                         |
+|    | (SISTEMA.USUARIO.FECHA.HORA)            |                    |                    |                                         |
+|397 | ID_NEGOCIO (QNEGOCIOS)                  |                    |                    |                                         |
+|398 | POL. EMITIDAS VIA COBRANZA DELEGADA     |                    |                    |                                         |
+|399 | MARCA EMISION RC AGENTES                |                    |                    |                                         |
+|400 | REG. ENT. EMISION RC AGENTES            |                    |                    |                                         |
+|401 | USO DE RETRO EN EMISION RC AGENTES      |                    |                    |                                         |
+|402 | POL. CON SUSTITUCION DE ASEGURADO       |                    |                    |                                         |
+|403 | MARCA SOAT (PERU)                       |                    |                    |                                         |
+|404 | POLIZA Q REFERIDA CON SOAT              |                    |                    |                                         |
+|405 | GRABA EN POLIZA AUT. RET. SOAT          |                    |                    |                                         |
+|406 | TIPO DE CERTIFICADO SOAT                |                    |                    |                                         |
+|407 | CERTIFICADO SOAT                        |                    |                    |                                         |
+|408 | BON.TEC. CONTINGENCIA                   |                    |                    |                                         |
+|409 | MONTO BON.TEC. CONTINGENCIA             |                    |                    |                                         |
+|410 | AUT. OFICINAS ODQ PARA EXCEPCIONES      |                    |                    |                                         |
+|411 | NO. DE POLIZA A REEXPEDIR               |                    |                    |                                         |
+|412 | NO. DE INCISO PARA QNEGOCIOS            |                    |                    |                                         |
+|413 | EXCEPCION EMPLEADA QNEGOCIOS            |                    |                    |                                         |
+|414 | PROVEEDOR GENERAL FLOTILLA              |                    |                    |                                         |
+|415 | NO. DIRECCION ASEGURADO UNICO           |                    |                    |                                         |
+|416 | RFC NORMALIZADO ASEGURADO UNICO         |                    |                    |                                         |
+|417 | POL. SUSTITUIDA ASEGURADO UNICO         |                    |                    |                                         |
+|418 | INCISO PROV. ASISTENCIA SATELITAL       |                    |                    |                                         |
+|419 | MARCA DE PRIMA INSUFICIENTE             |                    |                    |                                         |
+|420 | FECHAS POR AO                           |                    |                    |                                         |
+|421 | IMPORTE PN POR ANO M.N.                 |                    |                    |                                         |
+|422 | IMPORTE PN POR ANO M.E.                 |                    |                    |                                         |
+|423 | PROCESADO (PMAS DIFERIDAS)              |                    |                    |                                         |
+|424 | POL. REFERIDA A:                        |                    |                    |                                         |
+|425 | POLIZAS REFERIDAS                       |                    |                    |                                         |
+|426 | LIBRE                                   |                    |                    |                                         |
+|427 | LIBRE                                   |                    |                    |                                         |
+|428 | LIBRE                                   |                    |                    |                                         |
+|429 | ENDOSO CAMBIO DE FORMA DE PAGO          |                    |                    |                                         |
+|430 | DIRECCION CONTRATANTE                   |                    |                    |                                         |
+|431 | GASTOS DE EXPEDICION PERU               |                    |                    |                                         |
+|432 | BANDERA CAMBIO DE FORMA DE PAGO SIN RF  |                    |                    |                                         |
+|433 | MARCA POLIZA RC CONTRACTUAL             |                    |                    |                                         |
+|434 | POLIZA DE REFERENCIA RC CONTRACTUAL     |                    |                    |                                         |
+|435 | ENDOSO REFERENCIA RC CONTRACTUAL        |                    |                    |                                         |
+|436 | INCISO REFERENCIA RC CONTRACTUAL        |                    |                    |                                         |
+|437 | FEC.EMI REFERENCIA RC CONTRACTUAL       |                    |                    |                                         |
+|438 | FEC.DESDE REFERENCIA RC CONTRACTUAL     |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 9
+
+Archivo: PV
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+|439 | FEC. HASTA REFERENCIA RC CONTRACTUAL    |                    |                    |                                         |
+|440 | TIPO POLIZA RC CONTRACTUAL              |                    |                    |                                         |
+|441 | TIPO DOC RC CONTRACTUAL                 |                    |                    |                                         |
+|442 | REC.SUBSECUENTE (BONTECxINC)            |                    |                    |                                         |
+|443 | REC.SUBSECUENTE (BONTECxINC)            |                    |                    |                                         |
+|444 | SUBTOTAL                                |                    |                    |                                         |
+|445 | DERECHO POR ANIO M.N.                   |                    |                    |                                         |
+|446 | DERECHO POR ANIO USD                    |                    |                    |                                         |
+|447 | ASEGURADO UNICO                         |                    |                    |                                         |
+|448 | PROGRAMA QUE EJECTUA EL GRABADO         |                    |                    |                                         |
+|449 | USUARIO DE LINUX                        |                    |                    |                                         |
+|450 | AUT. P/EMITIR ASEG. ALTO RIESGO         |                    |                    |                                         |
+|451 | PRIMA ANUAL ANZEN-TOYTA                 |                    |                    |                                         |
+|452 | RF ANZEN-TOYTA                          |                    |                    |                                         |
+|453 | BON.NOR ANZEN-TOYTA                     |                    |                    |                                         |
+|454 | BON.REC ANZEN-TOYTA                     |                    |                    |                                         |
+|455 | BON.TEC ANZEN-TOYTA                     |                    |                    |                                         |
+|456 | REF. A INCISOS P/C ORIGINAL (RC CONT)   |                    |                    |                                         |
+|457 | AUT. SERIES CANCELADAS                  |                    |                    |                                         |
+|458 | MARCA DE ENVIOA A ARMOR DATOS DOC       |                    |                    |                                         |
+|459 | BANDERA PARA CALCULO GTOS. DE EXP.      |                    |                    |                                         |
+|460 | MARCA ENNVIO A ARMOR PERF. DECLARATIVO  |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
