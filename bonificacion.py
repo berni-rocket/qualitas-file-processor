@@ -10,7 +10,7 @@ def generate_combinations(df, columns_to_expand, delimiter='ý'):
             expanded_rows.append(new_row)
     return pd.DataFrame(expanded_rows, columns=['ramo_poliza_endoso'] + columns_to_expand)
 
-data_cleaned = pd.read_csv('emisiones.data-emisiones', header=1)
+data_cleaned = pd.read_csv('./data/emisiones.csv', header=1)
 
 multivariable_data_corrected = data_cleaned[['0', '33', '34', '13', '19']].copy()
 
