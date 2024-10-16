@@ -1,7 +1,5 @@
 from abc import abstractmethod
 import pandas as pd
-import re
-
 
 class Layout:
   

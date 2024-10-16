@@ -103,7 +103,7 @@
 | 96 | COD.CAMBIO CAMBIO                       |                    |                    |                                         |
 | 97 | CAMBIO DE MONEDA                        |                    |                    |                                         |
 | 98 | SUMA ASEGURADA         M.E.             |                    |                    |                                         |
-| 99 | PRIMA TOTAL            M.E.             | N,FI,2D,MV         |                    | (mv por att 19)                         |
+| 99 | PRIMA TOTAL            M.E. 1           | N,FI,2D,MV         |                    | (mv por att 19)                         |
 |100 | DERECHO DE POLIZA/END  M.E.             |                    |                    |                                         |
 |101 | RECARGO FINANCIERO     M.E.             |                    |                    |                                         |
 |102 | I.V.A. M.E.                             |                    |                    |                                         |
@@ -111,7 +111,7 @@
 |104 | BONIFICACION REC.FIN.  M.E.             |                    |                    |                                         |
 |105 | BONIFICACION TECNICA   M.E.             |                    |                    |                                         |
 |106 | PRIMA (SOLO P/ENDOSO REC.FIN) M.E.      | N,FI,2D,MV         |                    | (MV por att 19) (No suma en PREMIO)     |
-|107 | PRIMA TOTAL            M.E.             |                    |                    |                                         |
+|107 | PRIMA TOTAL            M.E. 2           |                    |                    |                                         |
 |108 | IMPORTE CUOTAS         M.E.             | N,FI,2D,MV         |                    | (mv por att 33)                         |
 |109 | TERMINAL                                | N,3D               |                    |                                         |
 |110 |                                         |                    |                    |                                         |

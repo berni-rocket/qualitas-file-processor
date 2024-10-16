@@ -1,0 +1,103 @@
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 1
+
+Archivo: COB
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+|  0 | SECCION                                 | 2N                 |                    |                                         |
+|  0 | POLIZA                                  | 9N                 |                    |                                         |
+|  0 | ENDOSO                                  | 6N                 |                    |                                         |
+|  0 | NRO DE COBRANZA                         | 2N                 |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+|  1 | NRO DE ASIENTO                          |                    |                    |                                         |
+|  2 | FECHA DE COBERTURA                      | FI                 |                    |                                         |
+|  3 | PREMIO NETO ABONADO                     |                    |                    |                                         |
+|  4 | TIPO DE PAGO                            |                    |                    | ""=A CTA,S=SALDO                        |
+|  5 | CAMBIO                                  |                    |                    | 4D                                      |
+|  6 | FORMA DE PAGO                           |                    |                    | 1=EF,2=CH,3=EyC,4=AM                    |
+|  7 | CODIGO DE CAJA                          |                    |                    |                                         |
+|  8 | CODIGO MONEDA POLIZA                    |                    |                    | PyP="00"                                |
+|  9 | Libre                                   |                    |                    |                                         |
+| 10 | NRO DE RECIBO DE PAGO (REC.PAGO)        | 7N                 |                    |                                         |
+| 11 | NRO DE RECIBO                           |                    |                    |                                         |
+| 12 | CODIGO DE PRODUCTORES                   |                    |                    | MV                                      |
+| 13 | PRIMA ABONADA                           |                    |                    |                                         |
+| 14 | DERECHO DE POLIZA                       |                    |                    |                                         |
+| 15 | RECARGO FINANCIERO                      |                    |                    |                                         |
+| 16 | IVA                                     |                    |                    |                                         |
+| 17 | COMISION DESCONTADA                     |                    |                    |                                         |
+| 18 | COMISION NORMAL   ACREDITADA            |                    |                    | MV                                      |
+| 19 | COMISION REC.FIN. ACREDITADA            |                    |                    |                                         |
+| 20 | COMISION TECNICA  ACREDITADA            |                    |                    | MV                                      |
+| 21 | COMISION COBRANZA ACREDITADA            |                    |                    |                                         |
+| 22 | DESCUENTO PRONTO PAGO                   |                    |                    |                                         |
+| 23 | BONIFICACION TEC.   ABONADA             |                    |                    |                                         |
+| 24 | BONIFICACION NORMAL ABONADA             |                    |                    |                                         |
+| 25 | BONIFICACION R.FIN. ABONADA             |                    |                    |                                         |
+| 26 | PREMIO BRUTO ABONADO                    |                    |                    |                                         |
+| 27 | PRIMA ABONADA -MONEX                    |                    |                    |                                         |
+| 28 | DERECHO DE POLIZA ABONADO -MONEX        |                    |                    |                                         |
+| 29 | RECARGO FINANCIERO ABONADO -MONEX       |                    |                    |                                         |
+| 30 | IVA COBRADO -MONEX                      |                    |                    |                                         |
+| 31 | COMISION DESCONTADA        -MONEX       |                    |                    |                                         |
+| 32 | COMIS.NORMAL   ACREDIT. -MONEX          |                    |                    | MV                                      |
+| 33 | COMIS.REC.FIN. ACREDIT. -MONEX          |                    |                    |                                         |
+| 34 | COMIS.TECNICA  ACREDIT. -MONEX          |                    |                    | MV                                      |
+| 35 | COMIS.COBRANZA ACREDIT. -MONEX          |                    |                    |                                         |
+| 36 | DESCUENTO PTO PAGO -MONEX               |                    |                    |                                         |
+| 37 | BONIFICACION TEC. -MONEX                |                    |                    |                                         |
+| 38 | BONIFICACION ABONADA -MONEX             |                    |                    |                                         |
+| 39 | BONIFIC. R.FIN. ABONADA -MONEX          |                    |                    |                                         |
+| 40 | PREMIO BRUTO ABONADO -MONEX             |                    |                    |                                         |
+| 41 | PREMIO NETO ABONADO -MONEX              |                    |                    |                                         |
+| 42 | PREMIO NETO ABONADO COAS                |                    |                    |                                         |
+| 43 | DESTO P.PAGO COAS                       |                    |                    |                                         |
+| 44 | PREMIO NETO ABON. COAS -MONEX           |                    |                    |                                         |
+| 45 | DESTO P.PAGO COAS -MONEX                |                    |                    |                                         |
+| 46 | COMISION NORMAL (AMORTIZ.)              |                    |                    |                                         |
+| 47 | COMISION NORMAL (AMORT)-MONEX           |                    |                    |                                         |
+| 48 | FECHA ORIG.COBRANZA (COB.ELI)           |                    |                    | COBRANZAS.ELIMINADAS                    |
+| "" | FECHA ORIG.AMORTIZ. (REHABIL)           |                    |                    | REHABILITACIONES                        |
+| 49 | INDICADOR DE COB.QUINCENAL              |                    |                    | "S"o"N"                                 |
+| 50 | Libre                                   |                    |                    |                                         |
+| 51 | Libre                                   |                    |                    |                                         |
+------------------------------------------------------------------------------------------------------------------------------------
+QUALITAS                                               DISENO DE REGISTROS                                                 Pagina: 2
+
+Archivo: COB
+
+------------------------------------------------------------------------------------------------------------------------------------
+|Att | Descripcion                             | Formato            | Vinculacion        | Observaciones                           |
+------------------------------------------------------------------------------------------------------------------------------------
+| 52 | UDI M.N.                                |                    |                    |                                         |
+| 53 | UDI M.E.                                |                    |                    |                                         |
+| 54 | PRIMA ABONADA COAS                      |                    |                    |                                         |
+| 55 | DERECHO DE POLIZA ABONADO COAS          |                    |                    |                                         |
+| 56 | RECARGO FINANCIERO ABONADO COAS         |                    |                    |                                         |
+| 57 | IVA COBRADO COAS                        |                    |                    |                                         |
+| 58 | COMISION DESCONTADA  COAS               |                    |                    |                                         |
+| 59 | COMIS. NORMAL  ACRED. COAS              |                    |                    |                                         |
+| 60 | COMIS.REC.FIN. ACRED. COAS              |                    |                    |                                         |
+| 61 | COMIS.TECNICA ACRED. COAS               |                    |                    |                                         |
+| 62 | COMIS.COBRANZA ACRED. COAS              |                    |                    |                                         |
+| 63 | BONIFICACION TEC. COAS                  |                    |                    |                                         |
+| 64 | BONIF. ABONADA COAS                     |                    |                    |                                         |
+| 65 | BONIF.R.FIN. ABONADA COAS               |                    |                    |                                         |
+| 66 | PREMIO BRUTO COAS                       |                    |                    |                                         |
+| 67 | PRIMA ABONADA COAS -MONEX               |                    |                    |                                         |
+| 68 | DER.POL. ABONADA COAS-MONEX             |                    |                    |                                         |
+| 69 | REC. FIN . ABONADA COAS-MONEX           |                    |                    |                                         |
+| 70 | IVA     COBRADOS COAS -MONEX            |                    |                    |                                         |
+| 71 | COMISION DESCONTADA COAS-MONEX          |                    |                    |                                         |
+| 72 | COMIS.NORMAL ACRED.COAS-MONEX           |                    |                    |                                         |
+| 73 | COMIS.REC.FIN ACRED. COAS-MONEX         |                    |                    |                                         |
+| 74 | COMIS.TECNICA ACRED. COAS-MONEX         |                    |                    |                                         |
+| 75 | COMIS.COBRANZA ACRED. COAS-MONEX        |                    |                    |                                         |
+| 76 | BONIFICACION TEC. COAS-MONEX            |                    |                    |                                         |
+| 77 | BONIF. ABONADA COAS -MONEX              |                    |                    |                                         |
+| 78 | BONIF.R.FIN. ABON.COAS -MONEX           |                    |                    |                                         |
+| 79 | PREMIO BRUTO COAS -MONEX                |                    |                    |                                         |
+| 80 | INDICADOR COASEGURO QUINCENAL           |                    |                    |                                         |
+| 81 | INDICADOR DE COMIS.COBRANZA             |                    |                    | "S"o""                                  |
+------------------------------------------------------------------------------------------------------------------------------------

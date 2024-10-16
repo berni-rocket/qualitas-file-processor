@@ -1,7 +1,7 @@
 
 import pandas as pd
 import re
-from src.lib.layout import Layout, LayoutMapper
+from src.lib.layout.base import Layout, LayoutMapper
 
 class LocalLayoutMapper(LayoutMapper):
   
