@@ -9,7 +9,6 @@ class LocalParser:
   def parse(self):
 
     layout_table = self.mapper.get_layout().get_table()
-    
     file = open(self.data_file,'r',encoding='cp1252')
     
     table=[]
