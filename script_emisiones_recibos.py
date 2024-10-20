@@ -1,25 +1,6 @@
+from src.lib.layout.local import LocalLayoutMapper
+from src.lib.parser.local import LocalParser
 
-from src.emisiones.parser import EmisionesParser
-from src.emisiones.layout import EmisionesLayoutMapper
-from src.utils import generate_combinations
-import pandas as pd
+df = LocalParser(mapper=LocalLayoutMapper(layout_file='./layouts/PV.txt'), data_file='./files/pv/PV.txt').get_subparser().expand(indexes=[0,1,2],indexes_to_expand=[35])
 
-data_file = './files/PV.txt'
-
-mapper = EmisionesLayoutMapper(layout_file='./layouts/PV.txt')
-parser = EmisionesParser(mapper=mapper, data_file=data_file)
-data_cleaned =parser.parse()
-
-print(data_cleaned.head())
-
-# Columnas que se deben expandir, la columna 0 no se incluye aquí
-indices_to_expand = [35]
-
-# Seleccionar columnas usando sus índices
-columns_to_expand = [data_cleaned.columns[i] for i in indices_to_expand]
-
-expanded_df = generate_combinations(data_cleaned[[data_cleaned.columns[0]] + columns_to_expand], columns_to_expand)
-
-print(expanded_df.head())
-
-expanded_df.to_csv('./data/emisiones_recibos.csv', index=False)
+print(df)
